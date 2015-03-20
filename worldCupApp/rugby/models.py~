@@ -29,6 +29,7 @@ class Matches(models.Model):
 	team2Score = models.IntegerField(default=0)
 
 class Coupon(models.Model):
+	user = models.ForeignKey(UserProfile)
 	t1 = models.CharField(max_length=128, unique = True)
 	t2 = models.CharField(max_length=128, unique = True)
 	t1Pred = models.IntegerField(default=0)

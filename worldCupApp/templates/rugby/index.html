@@ -1,11 +1,20 @@
 <!DOCTYPE html>
+
+{% load static %}
+
 <html>
-<head>Rugby World Cup</head>
+<head>
+	Rugby World Cup
+	<link rel="stylesheet" href="{% static "css/base.css" %}" />
+        <script src="{% static "js/jquery.js" %}"></script>
+</head>
 
 <body>
 	<h1>Welcome to the Rugby World Cup App</h1>
-	Hello players! <strong>{{ boldmessage }}</strong>
-	<a href="/rugby/about/">About</a><br/>
+	Hello players! <strong>{{ boldmessage }}</strong><br><br>
+	<a href="/rugby/about/">About</a><br><br>
+	<img src="{% static "rugbyball.jpg" %}" alt="Picture of rugby ball"/>
+	
 </body>
 
 </html>
